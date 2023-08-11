@@ -69,22 +69,23 @@ Qno.(4) C++ program to check whether a number is prime or not.
 using namespace std;
 
 int main() {
-  int n,i,c=0;
+  int n;
   cin>>n;
-bool isprime =1;
+bool isprime =true;
 for(int i=2;i<n;i++){
     if(n%i==0){
-        isprime=0;
+        isprime=false;
         break;
     }
 }
-if(isprime==0){
+if(isprime==false){
     cout<<"Not prime"<<endl;
 }
 else{
     cout<<"is prime number"<<endl;
 }
 }
+
 
 ---->Alternative method to check whether a number is prime or not(using function)
 
@@ -195,7 +196,7 @@ Qno.(9) C++ Program to Reverse Digits of a Number
 
 using namespace std;
 int main(){
-    int n,num;
+    int n;
     cout<<"Enter the number ";
     cin>>n;
     int r=0;
@@ -216,7 +217,7 @@ the signed 32-bit integer range[-2^32, 2^32 -1] the return 0 Write a c++ program
 
 using namespace std;
 int main(){
-    int n,num;
+    int n;
     cout<<"Enter the number ";
     cin>>n;
     int ans=0;
@@ -274,4 +275,28 @@ int main(){						|					|
     return 0;
 }
 
----> 
+---> C++ Program to Check Whether a Number is Palindrome or Not 
+
+#include<iostream>
+using namespace std;
+int main(){
+ int n,temp;
+ cout<<"Enter the number ";
+ cin>>n;
+ int ans=0;						//here i will use the concept of revere number "every palindrome is equallly when we take 
+ temp=n;						reverse of it" ....
+ while(n!=0){
+    int digit =n%10;
+    ans=(ans*10)+digit ;
+    n=n/10;
+    
+ }
+ cout<<ans<<endl;
+    if (temp==ans){
+        cout<<"yes It is a palindrome number "<<endl;
+    }
+    else 
+    cout<<"Not a palindrome number "<<endl;
+}
+
+--->
