@@ -13,11 +13,11 @@ int binarySearch(int arr[],int size,int key){
         if(arr[mid]==key){
             return mid;
         }
-        if(key>arr[mid]){
+        if(key>arr[mid]){    // <-- Go to Right wala side
             start=mid+1;
             
         }
-        else{
+        else{                // <-- Go to left wala side
             end=mid-1;
         }
         mid=start+(end-start)/2;
