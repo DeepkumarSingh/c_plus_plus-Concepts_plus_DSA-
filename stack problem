@@ -1,0 +1,35 @@
+# C++ program to check whether a number , string , combination of both (including Special Character) is palindrome or not with the help of Stack .
+
+#include <iostream>
+#include<stack>
+using namespace std;
+
+int main()
+{
+    cout<<"ENter the String "<<endl;
+    string s;
+    cin>>s;
+    stack<char>v;
+    int n=s.length();
+    for(int i=0;i<n;i++){
+        v.push(s[i]);
+    }
+    int f=0;
+    for(int i=0;i<n;i++){
+        if(v.top()!=s[i]){
+            f=1;
+            break;
+        }
+        v.pop();
+    }
+    if(f==0){
+        cout<<"Palindrome ";
+    }
+    else{
+        cout<<"NOt a Palindrome ";
+    }
+
+    return 0;
+}
+
+# c++ 
