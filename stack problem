@@ -19,7 +19,7 @@ int main()
         if(v.top()!=s[i]){
             f=1;
             break;
-        }
+        } 
         v.pop();
     }
     if(f==0){
