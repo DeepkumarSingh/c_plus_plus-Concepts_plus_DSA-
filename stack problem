@@ -34,12 +34,6 @@ int main()
 
 # 2 Stack in one Array implementation ---
 
-
-
-
-# Implementation of stack using Array 
-
-
 #include<iostream>
 #include<stack>
 using namespace std;
@@ -133,3 +127,6 @@ OUTPUT:
 Stack is Empty
 -1
 stack is empty mere dost
+
+
+# Implementation of stack using Array 
