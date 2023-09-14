@@ -128,5 +128,48 @@ Stack is Empty
 -1
 stack is empty mere dost
 
+#Reversing queue using stack 
+
+#include <iostream>
+#include <queue>
+#include <stack>
+using namespace std;
+
+int main()
+{
+   queue<int>animal;
+   stack<int>st;
+
+   animal.push(23);
+   animal.push(43);
+   animal.push(32);
+   animal.push(11);
+   animal.push(33);
+
+   //animal.pop(); //Removed element from the front side of queue
+
+   while(!animal.empty()){
+    st.push(animal.front());
+    animal.pop();
+   }
+
+   while(!st.empty())
+   {
+       animal.push(st.top());
+       st.pop();
+   }
+
+
+   while(!animal.empty())
+   {
+       cout<<animal.front()<<" ";
+
+   animal.pop();
+  // animal.pop();
+   }
+
+    return 0;
+}
+
 
 # Implementation of stack using Array 
