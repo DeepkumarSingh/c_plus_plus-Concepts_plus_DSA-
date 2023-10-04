@@ -1,4 +1,4 @@
-Qno (1.) C++ Program to Find Largest Among Three Numbers
+// C++ Program to Find Largest Among Three Numbers
 
 #include <iostream>
 
