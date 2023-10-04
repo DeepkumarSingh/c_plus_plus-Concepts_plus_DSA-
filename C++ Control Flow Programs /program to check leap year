@@ -1,0 +1,17 @@
+// C++ program to check leap year .
+
+#include<iostream>
+using namespace std;
+int main(){
+    int year;
+    cout<<"Enter the Year you want to check whether it is leap year or not "<<endl;
+    cin>>year;
+    if(year%400==0 || (year%100!=0 && year%4==0)){ //leap year ka matlab jo 4 ya 400 se divide ho jaye but for centuary year 100 se divide na ho 
+        cout<<"Yes it is Leap Year "<<endl;
+
+    }
+    else{
+    cout<<"No It's not a leap year"<<endl;
+    }
+
+}
