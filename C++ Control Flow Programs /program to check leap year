@@ -1,4 +1,4 @@
-// C++ program to check leap year .
+// C++ program to check leap year 
 
 #include<iostream>
 using namespace std;
