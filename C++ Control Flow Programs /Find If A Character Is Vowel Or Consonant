@@ -1,4 +1,4 @@
-Qno.(2) C++ Program To Find If A Character Is Vowel Or Consonant
+//C++ Program To Find If A Character Is Vowel Or Consonant
 
 #include <iostream>
 
