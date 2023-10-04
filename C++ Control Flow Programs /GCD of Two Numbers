@@ -1,4 +1,4 @@
-// GCD of Two Numbers in C++ (Using Euclid Algorithm easiest way to find gcd of any two natural number)
+// GCD of Two Numbers in C++ (Using Euclid Algorithm easiest way to find gcd of any two natural number) 
 
 #include<iostream>
 using namespace std;
