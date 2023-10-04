@@ -1,4 +1,4 @@
-Qno.(3)  C++ program to print fibonacci series 
+// C++ program to print fibonacci series 
 
 #include <iostream>
 
