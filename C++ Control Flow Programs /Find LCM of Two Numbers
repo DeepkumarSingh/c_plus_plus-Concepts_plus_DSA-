@@ -1,4 +1,4 @@
-// C++ Program To Find LCM of Two Numbers (Using Euclid Algorithm easiest way to find gcd of any two natural number)
+// C++ Program To Find LCM of Two Numbers (Using Euclid Algorithm easiest way to find gcd of any two natural number) 
 
 #include<iostream>
 using namespace std;
