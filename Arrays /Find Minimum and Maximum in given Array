@@ -37,3 +37,42 @@ Output :
 1 -2 10
 The Maximum value is 10
 The Minimum value is -2
+
+                                                    // OR
+#include <iostream>
+#include<limits.h>
+using namespace std;
+
+int get_min(int arr[],int size){
+  int minAns=INT_MAX;
+  for(int i=0;i<size;i++){
+    if(arr[i]<minAns){
+      minAns=arr[i];
+    }
+  }
+  return minAns;
+}
+int get_max(int arr[],int size){
+  int maxAns=INT_MIN;
+  for(int i=0;i<size;i++){
+    if(arr[i]>maxAns){
+      maxAns=arr[i];
+    }
+  }
+  return maxAns;
+}
+int main() {
+  int arr[]={20,4,15,2,6,8,11};
+  int size=7;
+  int minimum = get_min(arr,size);
+  int maximum=get_max(arr,size);
+  cout<<"Minimum value in the given array is :"<< minimum<<endl;
+  cout<<"Maximum value in the given array is :"<< maximum<<endl;
+  //cout << "Hello world!" << endl;
+  return 0;
+}
+
+OUTPUT:
+Minimum value in the given array is :2
+Maximum value in the given array is :20
+
